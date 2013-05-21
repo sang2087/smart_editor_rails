@@ -4,7 +4,7 @@
 
 NHN에서 개발한 smart editor 를 레일즈 사용자들이 사용하기 쉽도록 만든 gem입니다.
 
-rails3 이상에서 작동하도록 되어 있습니다.
+rails3 이상에서 작동하도록 되어 있습니다. `rails4`에서 사용할 때는 'rails4' branch를 사용하면 됩니다. 
 
 스마트에디터 : http://dev.naver.com/projects/smarteditor
 
@@ -15,6 +15,12 @@ rails3 이상에서 작동하도록 되어 있습니다.
 Gemfile에 다음과 같이 추가해 주시고
 
     gem 'smart_editor'
+
+Rails4에서는
+    
+    gem 'smart_editor', github: "goodoc/smart_editor_rails", branch: "rails4" 
+
+와 같이 github 저장소의 rails4 브랜치를 지정해 줍니다.   
     
 
 bundle을 입력하여 gem을 설치한 다음에 
@@ -79,7 +85,7 @@ controller 에서 다음을
     SmartEditor::bind_editor_images(self, "model name", [:create, :update])
     
 
-여기서 두번쨰 파라메터인 model name  스마트 에디터의 편집기능이 적용될 모델의 이름을 적어주시면 됩니다.
+여기서 두번쨰 파라메터인 model name  스마트 에디터의 편집기능이 적용될 모델의 이름(lower case)을 적어주시면 됩니다.
 세번째 파라메터인 [:create, :update]  스마트 에디터에서 편집된 내용이 적용되는 action들을 array로 적어주시면 됩니다.
 
 ex)
@@ -127,3 +133,4 @@ ex)
 Copyright (c) 2013 Goodoc
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
