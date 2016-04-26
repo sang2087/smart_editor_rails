@@ -9,9 +9,6 @@ require "smart_editor/version"
 Gem::Specification.new do |s|
   s.name        = "smart_editor"
   s.version     = SmartEditor::VERSION
-  s.authors     = "Younghun Choi"
-  s.email       = "zerohun@goodoc.co.kr"
-  s.homepage    = "https://github.com/zerohun/smart_editor_rails"
   s.summary     = "Rails gem for smart_editor"
   s.description = "gem to use WYSIWYG editor for rails user"
   s.license     = "LGPL"
@@ -20,7 +17,7 @@ Gem::Specification.new do |s|
   # s.files = Dir["{app,config,db,lib,vendor}/**/*"] + ["LGPL-LICENSE.md", "Rakefile", "README.rdoc"]
   # s.test_files = Dir["test/**/*"]
 
-  s.add_dependency "rails", "~> 4.0.0.rc1"
+  s.add_dependency "rails", "~> 4.2.4"
   s.add_dependency "carrierwave"
   s.add_dependency "jquery-rails"
   s.add_runtime_dependency 'execjs'
