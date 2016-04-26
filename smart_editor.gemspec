@@ -9,6 +9,9 @@ require "smart_editor/version"
 Gem::Specification.new do |s|
   s.name        = "smart_editor"
   s.version     = SmartEditor::VERSION
+  s.authors     = "Susang Park"
+  s.email       = "ssp@jasoseol.com"
+  s.homepage    = "https://github.com/sang2087/smart_editor_rails"
   s.summary     = "Rails gem for smart_editor"
   s.description = "gem to use WYSIWYG editor for rails user"
   s.license     = "LGPL"
